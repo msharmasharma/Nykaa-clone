@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body{
+        font-family: 'Source Sans Pro',sans-serif;
+        margin: 0%;
+        background-color: rgb(241, 241, 241);
+    }
+    #navbar{
+        /* border:  1px solid black; */
+        width: 100%;
+        height: 200px;  
+        margin: 0%;
+    }
+    #top{
+        display: grid;
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 20%;
+        background-size: cover ;
+        background-color: #fc2779;
+        background-image: url(https://adn-static1.nykaa.com/media/wysiwyg/2021/topstrips17.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        grid-template-columns: 40% 55%;
+        position:relative;
+    }
+    #top1{
+        margin-top: 2%;
+        font-weight:bold;
+        text-align: center;
+        font-size: 20px;
+    }
+    #middle{
+        border: 1px solid gray;
+        width: 100%;
+        height: 35%;
+        display: grid;
+        grid-template-columns: 10% 50% 20% 20%;
+        position: relative;
+        border-top: transparent;
+    }
+    #ftures{
+        display: flex;
+        gap: 20px;
+        font-size: 12px;
+        font-weight: bolder;
+        margin-top: 2.5%;
+        margin-left: 10%;
+    }
+    #logo{
+        margin-left: 50%;
+        margin-top: 7%;
+    }
+    #options{
+        display: flex;
+        gap: 20px;
+        margin-left: 34%;
+    }
+    #acc{
+        display: flex;
+    }
+    #bottom{
+        border: 1px solid gray;
+        border-top: transparent;
+        width: 100%;
+        height: 22%;
+        border-bottom: 4px solid rgb(177, 177, 177);
+    }
+    
+    #bottom1{
+        width: 85%;
+        margin: auto;
+        display: flex;
+        gap: 35px;
+        color: gray;
+        font-size: 14px;
+        margin-top: 0%;
+    }
+    #sale{
+        background: url(https://adn-static1.nykaa.com/media/wysiwyg/HeaderIcons/menusprite.png) -102px -44px no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        height: 23px;
+        line-height: 23px;
+        width: 85px;
+        margin-top: .8%;
+    }
+    #slide{
+        width: 90%;
+        margin: auto;
+        margin-top: 2%;
+        height: 250px;
+    }
+    #imgslide{
+        width: 100%;
+        height: 100%;
+    }
+    #footer{
+    width: 100%;
+    height: 910px;
+    /* border: 1px solid red; */
+}
+#shampPro{
+    width: 90%;
+    height: 1900px;
+    display: grid;
+    grid-template-columns: 20% 75%;
+    gap: 5%;
+    /* border: 1px solid green; */
+    margin: auto;
+    margin-top: 2%;
+    overflow: hidden;
+    margin-bottom: 2%;
+}
+#sideP p{
+    width: 100%;
+    height: 40px;
+    border: 1px solid gray;
+    font-size: 15px;
+    line-height: 40px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    margin-top: -5%;
+    font-weight: 700;
+    background-color: white;
+}
+#productbar{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    justify-content: space-around;
+    row-gap: .007%;
+}
+#proDiv{
+    background-color: white;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+#proDiv img{
+    width: 100%;
+    height: 250px;
+}
+#proDiv button{
+    width: 100%;
+    height: 45px;
+    color: white;
+    background-color: rgb(218, 34, 95);
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 18px;
+}
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="top">
+            <div id="top1">Mega Republic Day Sale - Upto 50% Off</div>    
+                <div id="options">
+                    <p><img style="margin: -37% 0% 0% 0%;" src="https://www.freeiconspng.com/uploads/image--mobile-icon--risk-of-rain-wiki--wikia-3.png" width="25px" height="25px"/></p><p style="margin: 2.2% -2% 0% -3.2%;" id="top2">Get App <p style="font-size:29px;margin: 0% -5% 0% 0%;">|</p> </p>
+                    <p><img style="margin: -37% 0% 0% 0%;" src="https://www.freeiconspng.com/uploads/location-icon-map-png--1.png" width="25px" height="25px"/></p><p style="margin: 2.2% -2% 0% -3.2%;" id="top21">Store & Events<p style="font-size:29px;margin: 0% -5% 0% 0%;">|</p> </p>
+                    <p><img style="margin: -37% 0% 0% 0%;" src="https://www.freeiconspng.com/uploads/new-credit-card-icon-27.png" width="25px" height="25px"/></p><p style="margin: 2.2% -2% 0% -2%;" id="top22">Gift Card<p style="font-size:29px;margin: 0% -5% 0% 0%;">|</p> </p>
+                    <p><img style="margin: -37% 0% 0% 0%;" src="https://www.freeiconspng.com/uploads/black-question-mark-icon-clip-art-10.png" width="25px" height="25px"/></p><p style="margin: 2.2% -2% 0% -3%;" id="top23">Help</p>
+                </div>
+        </div>
+        <div id="middle">
+            <div id="logo"><a style="text-decoration: none;" href="http://127.0.0.1:5500/home.html"><img style="margin: 13% 0% 0% 6%;" src="https://cdn.worldvectorlogo.com/logos/nykaa-1.svg" width="130px" height="34px"/></a></div>                <div id="ftures">
+                    <p>CATEGORIES</p>
+                    <p>BRANDS</p>
+                    <p>NYKAA FASHION</p>
+                    <p>BEAUTY ADVICE</p>
+                    <p>NYKAA NETWORK</p>
+                </div>
+                <div style="margin-top: 5%;margin-left: 10%;"><input style="text-align: center; width: 200px;height: 35px;background-color: rgb(221, 221, 221);border: 1px solid gray;" type="text" placeholder="Search on Nykaa"/></div>
+                <div id="acc"><p></p><p style="margin-top: 10.5%;font-size: 13px;">Account</p><p style="margin: 8% 0% 0% 8%;"><a style="text-decoration: none;" href="http://127.0.0.1:5500/cart.html"><img src="https://www.freeiconspng.com/uploads/bag-career-suitcase-travel-icon--1.png" width="25" height="25" alt="Bag, career, suitcase, travel icon " /></a></p></div>
+        </div>
+        <div id="bottom">
+            <div id="bottom1">
+            <p>Makeup</p>
+            <p>Skin</p>
+            <p><a style="text-decoration: none;" href="http://127.0.0.1:5500/hair.html">Hair</a></p>
+            <p>Appliances</p>
+            <p>Personal Care</p>
+            <p>Natural</p>
+            <p>Mom & Baby</p>
+            <p>Health & Wellness</p>
+            <p>Men</p>
+            <p>Fragrance</p>
+            <p style="color: rgb(48, 47, 47); font: weight 800px;;">LUXE</p>
+            <p id="sale"></p>
+            </div>
+        </div>
+<!-- navbar end  -->
+<div id="top1">Shampoo Collection - Anti Dandruff, Hairfall And Sulphate Free (2284)</div>   
+<div id="slide"></div>
+<div style="width: 90%;display: grid;grid-template-columns: 60% 40%;height: 250px;margin: auto;margin-top: 3%;">
+        <div style="height: 100%;text-align: center;background-color: rgb(153, 153, 153);">
+            <p style="font-size: 24px;margin-top: 13%;margin-bottom: 8%;">Lighter-Than-(H)Air Formulas That Save The Day</p>
+            <p>Hair products feel heavier than the load of the entire world on your head? Here are <br>
+                 some weightless formulas, from leave-in conditioners, hair sprays, mousses and 
+                <br> oils, just for you.</p>
+            <p style="color: rgb(255, 29, 67);">Read More On Nykaa's Beauty Book ></p>
+        </div>
+        <div style="height: 100%;">
+        <img style="width: 100%;height: 100%;" src="https://www.nykaa.com/media/categoryInfo/art_banner_image/LIGHTER-THAN-_H_AIR_FORMULAS_THAT_SAVE_THE_DAY.jpg" alt="">
+        </div>
+</div>
+<div style="margin-top: 12%;text-align: center;font-size: 20px;font-weight: bold;">All Products</div>
+<div id="shampPro">
+        <div id="sidebar" >
+            <div>
+                <select id="Sort" style="width: 100%;height: 40px;font-size: 20px;font-weight: 700;margin-bottom: 11%;background-color: white;border: 1px solid rgb(184, 184, 184);">
+                    <option>Sort</option>
+                    <option id="firstSort" value="shoes">Price Low To High</option>
+                    <option id="secondSort" value="tshirt">Price High To Low</option>
+                </select> 
+            </div>
+            <div id="sideP">
+                <p>
+                    Brand
+                    </p>
+                <p>Price
+                   </p>
+                <p> Discount
+                   </p>
+                <p> Avg Customer Rating
+                    </p>
+                <p>Preference
+                    </p>
+                <p>Hair Type
+                    </p>
+                <p>Concern
+                    
+                  </p>
+                <p>  Gender
+                    </p>
+                <p>Conscious
+                </p>
+                <p>    Ingredient</p>
+                <p>Formulation</p>
+            </div>
+        </div>
+        <div id="productbar">
+
+        </div>
+</div>
+<!-- footer -->
+<div id="footer">
+    <div id="fTop" style="width: 100%;height: 20%;background-color: rgb(83, 83, 83);" >
+        <div style="display: grid;grid-template-columns: 28% 28% 34%;gap: 5%;width: 90%;margin: auto;height: 100%;" id="firstTop">
+            <div >
+                        <div style="display: flex;margin-top: 10%;"><img style="width: 30px; height: 30px;margin-top: 3%;margin-right: 2%;margin-left: 4%;" src="https://img.icons8.com/fluency-systems-regular/2x/new-post.png"/><p style="font-size: 13px;margin-top: 6.2%;color: white;font-weight: bold;">GET SPECIAL DISCOUNT ON YOUR INBOX</p></div>
+                        <div style="display: flex;"><p style="font-size: 13px;color: white;font-weight: bold;margin-left: 5%;">Your Email</p><p style="border: 1px solid white;font-size: 13px;color: white;font-weight: bold;width: 60px;height: 20px;text-align: center;padding-top: 2%;margin-left: 50%;">SEND</p></div>
+                        <hr style="width: 65%;margin-right: 30%;margin-top: -4%;">
+                    </div>
+            <div >
+                <div style="display: flex;margin-top: 10%;"><img style="width: 30px; height: 30px;margin-top: 3%;margin-right: 2%;margin-left: 4%;" src="https://www.freeiconspng.com/uploads/image--mobile-icon--risk-of-rain-wiki--wikia-3.png"/><p style="font-size: 13px;margin-top: 5.5%;color: white;font-weight: bold;">EXPERIENCE THE NYKAA MOBILE APP</p></div>
+                <div style="display: flex; gap: 20px;"><img style="width: 140px; height: 140px;margin-top: -12%;margin-left: 6%;" src="https://freeiconshop.com/wp-content/uploads/edd/google-play-badge.png"/><img style="width: 140px; height: 140px;margin-top: -12%;" src="https://freeiconshop.com/wp-content/uploads/edd/app-store-badge.png"/></div>
+            </div>
+            <div >
+                <div style="display: flex;margin-top: 10%;"><img style="width: 30px; height: 30px;margin-top: 1%;margin-right: 2%;margin-left: 4%;" src="https://freeiconshop.com/wp-content/uploads/edd/phone-outline-128x128.png"/><p style="font-size: 13px;margin-top: 2%;color: white;font-weight: bold;">FOR ANY HELP YOU MAY CALL US AT <br>1800-267-4444<br><br/>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</p></div>
+            </div>
+        </div>
+    </div>
+    <div id="fTop2" style="justify-content: space-around;width: 100%;height: 40%;background-color: rgb(175, 175, 175);display: grid;grid-template-columns: repeat(5,18%);font-size: 13px;color: white;line-height: 13px;">
+                <div style="margin-left: 28%;margin-top: 10%;">
+                    <p style="margin-left: -7%;margin-bottom: 13%;"><img  src="https://cdn.worldvectorlogo.com/logos/nykaa-1.svg" width="130px" height="34px"/></p>
+                    <p>WHO ARE WE?
+                        </p>
+                    <p>CAREERS
+                        </p>
+                    <p>AUTHENTICITY
+                        </p>
+                    <p>PRESS
+                        </p>
+                    <p>TESTIMONIALS
+                        </p>
+                    <p>NYKAA CSR
+                       </p>
+                    <p> RESPONSIBLE DISCLOSURE
+                        </p>
+                    <p>INVESTOR RELATIONS</p>
+                </div>
+                <div style="margin-top: 11%;">
+                    <p style="font-size: 20px;margin-bottom: 11%;">HELP</p>
+                    <p>CONTACT US</p>
+                    <p>FREQUENTLY ASKED QUESTIONS</p>
+                    <p>STORE LOCATOR   </p>
+                    <p>CANCELLATION & RETURN</p>
+                    <p>SHIPPING & DELIVERY</p>
+                    <p>SELL ON NYKAA</p>
+                </div>
+                <div style="margin-top: 11%;">
+                    <p style="font-size: 20px;margin-bottom: 9.6%;"> INSPIRE ME
+                                    </p>
+                    <p> BEAUTY BOOK
+                                    </p>
+                    <p> NYKAA TV
+                                    </p>
+                    <p> NYKAA NETWORK
+                                    </p>
+                    <p> BUYING GUIDES            </p>
+                </div>
+                <div style="margin-top: 11%;">
+                    <p style="font-size: 20px;margin-bottom: 9.6%;">QUICK LINKS
+                        </p>
+                    <p>OFFER ZONE
+                       </p>
+                    <p> NEW LAUNCHES
+                        </p>
+                    <p>NYKAA MAN
+                        </p>
+                    <p>NYKAA FASHION
+                       </p>
+                    <p> NYKAA PRO
+                        </p>
+                    <p>NYKAA FEMINA BEAUTY AWARDS WINNERS 2019
+                        </p>
+                    <p>SITEMAP</p>
+                </div>
+                <div style="margin-top: 11%;">
+                    <p style="font-size: 20px;margin-bottom: 9.6%;">TOP CATEGORIES
+                        </p>
+                    <p>MAKEUP
+                        </p>
+                    <p>SKIN
+                       </p>
+                    <p> HAIR
+                        </p>
+                    <p>PERSONAL CARE
+                       </p>
+                    <p> APPLIANCES
+                        </p>
+                    <p>MOM AND BABY
+                       </p>
+                    <p> WELLNESS
+                        </p>
+                    <p>FRAGRANCE
+                        </p>
+                    <p>NATURAL
+                        </p>
+                    <p>LUXE</p>
+                </div>
+    </div>
+    <div id="fTop3" style="width: 100%;height: 30%;background-color: rgb(235, 235, 235);font-size: 15px;display: grid;grid-template-columns: repeat(5,19%);gap: 2%;">
+                <div style="display: flex;gap: 10px;margin-left: 46%;margin-top: 37%;">
+                    <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Free-shipping.svg"/></div>
+                    <div>FREE SHIPPING <br>______________ <br><br> for orders above <br> INR499</div>
+                </div>
+                <div style="display: flex;gap: 10px;margin-left: 17%;margin-top: 37%;">
+                    <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/return_accepted.svg"/></div>
+                    <div>EASY RETURNS <br>______________ <br><br>15 Day Easy Return <br> For Most Products</div>
+                </div>
+                <div style="display: flex;gap: 10px;margin-left: -7%;margin-top: 37%;">
+                    <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Authenticity.svg"/></div>
+                    <div>AUTHENTIC PRODUCTS <br>_____________________ <br><br> Sourced Directly From <br> Brands/Authorised<br>Distributors</div>
+                </div>
+                <div style="display: flex;gap: 10px;margin-left: -15%;margin-top: 37%;">
+                    <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Brands.svg"/></div>
+                    <div>2400+ Brands <br>___________ <br><br> Well Curated 1.9 Lakh <br> + Product</div>
+                </div>
+                <div style="margin-left: -35%;margin-top: 35.9%;">
+                    <div style="font-size: 13px;font-weight: bold;">SHOW US SOME LOVE ❤ ON<br> &ensp; &ensp; &ensp; &ensp; SOCIAL MEDIA</div>
+                    <div style="display: flex; gap: 17px;margin-top: 4%;">
+                        <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-instagram-filled.svg" />
+                        <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-facebook-filled.svg" />
+                        <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" />
+                        <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-twitter-filled.svg" />
+                        <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-pinterest-filled.svg" />
+                    </div>
+                </div>
+    </div>
+    <div id="fTop4" style="width: 100%;height: 10%;background-color: rgb(255, 73, 103);font-size: 13px;color: white;text-align: center;">
+                <div style="display: flex;gap: 20px;margin-left: 28%;padding-top: .8%;">
+                <p>TERMS & CONDITIONS</p>
+                <p>SHIPPING POLICY</p>
+                <p>CANCELLATION POLICY</p>
+                <p>PRIVACY POLICY</p>
+                </div>
+                <div style="margin-top: 1%;">© 2022 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+ var  shampooData = [
+        {
+            url:"https://images-static.nykaa.com/uploads/4ff84eb2-5cd8-4eb9-9a82-d3211a56c565.jpg?tr=w-1200,cm-pad_resize",
+        },
+        {
+            url:"https://images-static.nykaa.com/uploads/2fdb1e0a-4d64-42c9-b47a-4f38c3ae6ce1.jpg?tr=w-1200,cm-pad_resize",
+        },
+        {
+            url:"https://images-static.nykaa.com/uploads/67d5c9eb-4a93-4ee8-8464-fa39eb214244.jpg?tr=w-1200,cm-pad_resize",
+        },
+    ]
+    addImage1()
+   function addImage1(){
+       var arr = JSON.parse(localStorage.getItem("shampooData")) || []
+     shampooData.forEach((el)=>{
+        arr.push(el)
+     })
+       
+       localStorage.setItem("shampooData",JSON.stringify(arr))
+   }
+   let id;
+   let i = 0
+   let imgDiv = document.getElementById("slide") 
+   id = setInterval(function(){
+        if(i===shampooData.length){
+            i=0;
+        }
+        imgDiv.innerHTML = null
+
+        let img = document.createElement("img")
+        img.setAttribute("id","imgslide")
+
+        img.src = shampooData[i].url
+
+        imgDiv.append(img)
+        i++
+        
+
+    },2000);
+    
+    var shampPro = [
+        {
+            img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/e/3e0b9653600542318280__1_.png",
+            name:"Garnier Fructis Hair Food - Reparing Papaya Shampoo",
+            price:549,
+        },
+        {
+            img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/d/3d3a190TR_KSAOS_1.jpg",
+            name:"Tresemme Keratin Smooth With Argan Oil Shampoo",
+            price:629,
+        },
+        {
+            img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/6/7/67a1617NYMATRIX00109_0.jpg",
+            name:"Matrix Opti Care Smooth Straight Professional Shampoo",
+            price:535,
+        },
+        {
+            img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/d/3d232868901526403868_1.jpg",
+            name:"Garnier Fructis Hair Food - Reparing Papaya Shampoo",
+            price:549,
+        },
+        {
+            img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/e/3e0b9653600542318280__1_.png",
+            name:"LOreal Professionnel X-Tenso Care Pro-Keratine",
+            price:580,
+        },
+        {
+            img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/9/d/9d026918906087777199_1.jpg",
+            name:"Mamaearth Almond Shampoo With Almond Oil And Vitamin E",
+            price:325,
+        },
+        {
+            img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/4/c4489004064666036267_1.jpg",
+            name:"Wella Professionals Elements Renewing Shampoo",
+            price:1100,
+        },
+        {
+            img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/7/1/717c5a78904311902133.jpg",
+            name:"WOW Skin Science Red Onion Black Seed Oil Shampoo",
+            price:355,
+        },
+        {
+            img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/0/9/0938a71nyloprof00002_0.jpg",
+            name:"L'Oreal Professionnel Absolut Repair Shampoo",
+            price:695,
+        },
+        {
+            img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/e/2/e29eacd8906087771807ap__1_.jpg",
+            name:"Mamaearth Onion Shampoo For Hair Growth & Hair Fall Control",
+            price:325,
+        },
+        {
+            img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/n/y/nybndlp000019_1.jpg",
+            name:"L'Oreal Professionnel X-Tenso Shampoo + Masque + Serum",
+            price:1679,
+        },
+        {
+            img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/n/y/nybndlp000013_1.jpg",
+            name:"L'Oreal Professionnel X-Tenso Care Sulfate free Shampoo",
+            price:1670,
+        },
+    ]
+    shmapData()
+        
+    function shmapData(){
+        var arr1 = JSON.parse(localStorage.getItem("shamp")) || []
+        var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+        shampPro.map((el)=>{
+            arr1.push(el) 
+        })
+        localStorage.setItem("shamp",JSON.stringify(arr1))
+    appendShamp(arr1)
+    function appendShamp(arr1){
+        arr1.map(function(sData){
+        let div = document.createElement("div")
+        div.setAttribute("id","proDiv")
+        var img = document.createElement("img");
+        img.src = sData.img;
+        img.setAttribute("id", "photo");
+
+        var p = document.createElement("p");
+        p.textContent = `${sData.name}`;
+
+        var p2 = document.createElement("p");
+        p2.textContent = `MRP:₹${sData.price}`;
+
+        var btn = document.createElement("button");
+        btn.textContent = "Add To Cart";
+        btn.setAttribute("id", "btn1");
+        btn.addEventListener("click", function () {
+          addCart(sData);
+        });
+
+        div.append(img, p, p2,btn);
+        document.getElementById("productbar").append(div)
+      });
+
+      function addCart(mData) {
+        cartData.push(mData);
+        localStorage.setItem("cartData", JSON.stringify(cartData));
+    }
+}
+    
+
+document.getElementById("firstSort").addEventListener("click",firstFun)
+
+function firstFun(){
+let div = document.getElementById("proDiv")
+  arr1.sort(function (a,b) {
+      return a.price -  b.price
+  })
+  div.innerHTML="";
+  appendShamp(arr1); 
+}
+
+document.getElementById("secondSort").addEventListener("click",secondFun)
+
+function secondFun(){
+    let div = document.getElementById("proDiv")
+    arr1.sort(function (a,b) {
+  return b.price -  a.price
+})
+div.innerHTML="";
+
+appendShamp(arr1);
+}
+}
+</script>
