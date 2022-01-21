@@ -115,7 +115,7 @@
     /* border: 1px solid green; */
     margin: auto;
     margin-top: 2%;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-bottom: 2%;
 }
 #sideP p{
@@ -135,7 +135,6 @@
     display: grid;
     grid-template-columns: repeat(3,30%);
     justify-content: space-around;
-    row-gap: .007%;
 }
 #proDiv{
     background-color: white;
@@ -216,11 +215,11 @@
 <div id="shampPro">
         <div id="sidebar" >
             <div>
-                <select id="Sort" style="width: 100%;height: 40px;font-size: 20px;font-weight: 700;margin-bottom: 11%;background-color: white;border: 1px solid rgb(184, 184, 184);">
-                    <option>Sort</option>
-                    <option id="firstSort" value="shoes">Price Low To High</option>
-                    <option id="secondSort" value="tshirt">Price High To Low</option>
-                </select> 
+                <div id="sort"  style="display: flex;width: 100%;height: 40px;font-size: 20px;font-weight: 700;margin-bottom: 11%;background-color: white;border: 1px solid rgb(184, 184, 184);">
+                    
+                    <button id="firstSort" value="lowest">Price Low To High</button>
+                    <button id="secondSort" value="highest">Price High To Low</button>
+                </div> 
             </div>
             <div id="sideP">
                 <p>
@@ -493,17 +492,17 @@
         },
     ]
     shmapData()
-        
+    
     function shmapData(){
-        var arr1 = JSON.parse(localStorage.getItem("shamp")) || []
+        var shData = JSON.parse(localStorage.getItem("shamp")) || []
         var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
-        shampPro.map((el)=>{
-            arr1.push(el) 
-        })
-        localStorage.setItem("shamp",JSON.stringify(arr1))
-    appendShamp(arr1)
-    function appendShamp(arr1){
-        arr1.map(function(sData){
+        
+        localStorage.setItem("shamp",JSON.stringify(shampPro))
+        console.log(shData)
+    appendShamp(shData)
+
+    function appendShamp(shData){
+        shData.map(function(sData){
         let div = document.createElement("div")
         div.setAttribute("id","proDiv")
         var img = document.createElement("img");
@@ -532,29 +531,34 @@
         localStorage.setItem("cartData", JSON.stringify(cartData));
     }
 }
-    
 
 document.getElementById("firstSort").addEventListener("click",firstFun)
 
 function firstFun(){
-let div = document.getElementById("proDiv")
-  arr1.sort(function (a,b) {
+let div = document.getElementById("productbar")
+
+  shData.sort(function (a,b) {
       return a.price -  b.price
   })
+  console.log("this")
   div.innerHTML="";
-  appendShamp(arr1); 
+  
+  appendShamp(shData); 
+  
 }
 
 document.getElementById("secondSort").addEventListener("click",secondFun)
 
 function secondFun(){
-    let div = document.getElementById("proDiv")
-    arr1.sort(function (a,b) {
+    let div = document.getElementById("productbar")
+   
+    shData.sort(function (a,b) {
   return b.price -  a.price
 })
+console.log("this")
 div.innerHTML="";
+appendShamp(shData);
 
-appendShamp(arr1);
 }
 }
 </script>
