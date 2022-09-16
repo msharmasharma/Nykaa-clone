@@ -1,11 +1,13 @@
 See Project :- https://nykaa-clone-nykaa.netlify.app/
 
-To see functionalities:-
-click on hair option <br>
-In hair page click on shampoo option <br>
-In shampoo page add items to the cart also can sort items using sort option in shampoo page <br>
-In cart page can remove items and can see total number of items and total amount also then click on checkout option <br>
-In checkout page fill age details and click on place order to place the order. <br>
+To see functionalities:- <br>
+- click on hair option <br>
+- In hair page click on shampoo option <br>
+- In shampoo page add items to the cart also can sort items using sort option in shampoo page <br>
+- In cart page can remove items and can see total number of items and total amount also then click on checkout option <br>
+- In checkout page fill age details and click on place order to place the order. <br>
+
+
 
 Nykaa is an Indian e-commerce company, founded by Falguni Nayar in 2012 and headquartered in Mumbai. It sells beauty, wellness and fashion products across websites, mobile apps and 100+ offline stores. In 2020, it became the first Indian unicorn startup headed by a woman. 
 
